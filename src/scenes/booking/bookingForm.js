@@ -114,6 +114,7 @@ const mapDispatchToProps = dispatch => {
   return {
     // dispatching plain actions
     onSubmit: booking => {
+      //add post api here
       dispatch({ type: 'bookingSuccess', booking_details: booking });
     }
   };

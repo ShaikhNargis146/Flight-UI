@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import { Redirect } from 'react-router';
 
 class PaymentForm extends React.Component {
@@ -13,7 +13,8 @@ class PaymentForm extends React.Component {
 
   onSubmit(event, bookingDetails) {
     event.preventDefault();
-    if (bookingDetails.from && bookingDetails.to)
+    //add payment api save here
+    if (bookingDetails.departure && bookingDetails.arrival)
       this.setState({ isSubmit: true });
   }
 
